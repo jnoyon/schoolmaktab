@@ -3,9 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>School Maktab</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: AdorNoirrit;
+            src: url(fonts/AdorNoirrit.ttf);
+        }
+        body {
+            font-family: AdorNoirrit;
+        }
+    </style>
 </head>
 <body>
     
+    <header class="header-area border-gray-200 border-b border-solid">
+        <div class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h7" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Homepage</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>About</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center">
+                  <a class="btn btn-ghost text-xl">স্কুল মক্তব</a>
+                </div>
+                <div class="navbar-end">
+                  <button class="btn btn-ghost btn-circle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                  <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                      </svg>
+                      <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+        </div>
+    </header>
+    <section class="hero-area">
+        <div class="mx-auto">
+            <div class="hero min-h-screen" style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+                <div class="hero-overlay bg-opacity-90"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                        <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold"> দুনিয়ার কল্যান এবং আখিরাতে মুক্তি </h1>
+                        <button class="btn btn-success text-white text-xl font-bold"> কোর্সগুলো দেখুন </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container mx-auto w-11/12">
+            <h2 class="divider divider-success font-bold text-xl">আমাদের সম্পর্কে</h2>
+            <div class="features-area grid gap-3 grid-cols-2 md:grid-cols-4">
+
+                <div class="card bg-blue-100 rounded-md shadow-xl">
+                    <div class="card-body p-3">
+                      <p class="text-justify">  ৯২+ উস্তায উস্তাযা এর মাধ্যমে ক্লাস করানো হয়ে থাকে। এছাড়াও, দেশ-বিদেশের বিখ্যাত উলামায়ে কেরাম আইওএম স্টুডিওতে ক্লাস নিয়ে থাকেন  </p>
+                    </div>
+                </div>
+
+                <div class="card bg-yellow-100 rounded-md shadow-xl">
+                    <div class="card-body p-3">
+                      <p class="text-justify">   প্রতিটি ক্লাস স্টুডেন্টদের জন্য সুবিধাজনক সময়ে জুম এপের মাধ্যমে লাইভ নেওয়া হয়। লাইভ ক্লাস অংশগ্রহণে এটেন্ডেন্সের উপর মার্ক দেওয়া হয়  </p>
+                    </div>
+                </div>
+
+                <div class="card bg-yellow-100 rounded-md shadow-xl">
+                    <div class="card-body p-3">
+                      <p class="text-justify"> প্রতিটি ক্লাস স্টুডেন্টদের জন্য সুবিধাজনক সময়ে জুম এপের মাধ্যমে লাইভ নেওয়া হয়। লাইভ ক্লাস অংশগ্রহণে এটেন্ডেন্সের উপর মার্ক দেওয়া হয়  </p>
+                    </div>
+                </div>
+                <div class="card bg-yellow-100 rounded-md shadow-xl">
+                    <div class="card-body p-3">
+                      <p class="text-justify">   প্রতিটি ক্লাস স্টুডেন্টদের জন্য সুবিধাজনক সময়ে জুম এপের মাধ্যমে লাইভ নেওয়া হয়। লাইভ ক্লাস অংশগ্রহণে এটেন্ডেন্সের উপর মার্ক দেওয়া হয়  </p>
+                    </div>
+                </div>
+                <div class="card bg-yellow-100 rounded-md shadow-xl">
+                    <div class="card-body p-3">
+                      <p class="text-justify">   প্রতিটি ক্লাস স্টুডেন্টদের জন্য সুবিধাজনক সময়ে জুম এপের মাধ্যমে লাইভ নেওয়া হয়। লাইভ ক্লাস অংশগ্রহণে এটেন্ডেন্সের উপর মার্ক দেওয়া হয়  </p>
+                    </div>
+                </div>
+                <div class="card bg-yellow-100 rounded-md shadow-xl">
+                    <div class="card-body p-3">
+                      <p class="text-justify">   প্রতিটি ক্লাস স্টুডেন্টদের জন্য সুবিধাজনক সময়ে জুম এপের মাধ্যমে লাইভ নেওয়া হয়। লাইভ ক্লাস অংশগ্রহণে এটেন্ডেন্সের উপর মার্ক দেওয়া হয়  </p>
+                    </div>
+                </div>
+                <div class="card bg-yellow-100 rounded-md shadow-xl">
+                    <div class="card-body p-3">
+                      <p class="text-justify">   প্রতিটি ক্লাস স্টুডেন্টদের জন্য সুবিধাজনক সময়ে জুম এপের মাধ্যমে লাইভ নেওয়া হয়। লাইভ ক্লাস অংশগ্রহণে এটেন্ডেন্সের উপর মার্ক দেওয়া হয়  </p>
+                    </div>
+                </div>
+                <div class="card bg-yellow-100 rounded-md shadow-xl">
+                    <div class="card-body p-3">
+                      <p class="text-justify">   প্রতিটি ক্লাস স্টুডেন্টদের জন্য সুবিধাজনক সময়ে জুম এপের মাধ্যমে লাইভ নেওয়া হয়। লাইভ ক্লাস অংশগ্রহণে এটেন্ডেন্সের উপর মার্ক দেওয়া হয়  </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-24">
+        <div class="container">
+            <div class="btm-nav md:hidden">
+                <button class="bg-pink-200 text-pink-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span class="btm-nav-label">Home</span>
+                </button>
+                <button class="active border-blue-600 bg-blue-200 text-blue-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span class="btm-nav-label">Warnings</span>
+                </button>
+                <button class="bg-teal-200 text-teal-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                  <span class="btm-nav-label">Statics</span>
+                </button>
+              </div>
+        </div>
+    </footer>
+
 </body>
 </html>
