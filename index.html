@@ -10,96 +10,65 @@
 </head>
 <body>
     
-    <header class="header-area border-gray-200 border-b border-solid md:hidden">
-        <div class="container mx-auto">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h7" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>কোর্সসমূহ</a></li>
-                      <li><a>সিলেবাস</a></li>
-                      <li><a>ভর্তি ফরম</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="navbar-center">
-                  <a class="btn btn-ghost text-xl">স্কুল মক্তব</a>
-                </div>
-                <div class="navbar-end">
-
-                  
-                </div>
+    <header class="hero-area flex flex-col justify-between md:min-h-screen bg-gradient-to-r from-green-100 via-blue-50 to-pink-100">
+        <div class="header-section border-b border-gray-300 border-solid">
+          <div class="container mx-auto w-11/12">
+            <div class="navbar">
+              <div class="navbar-start">
+                <a class="text-xl" href="#"> <span class="text-green-500">স্কুল</span> মক্তব </a>
               </div>
-        </div>
-    </header>
-
-    <header class="hidden border-b border-gray-300 border-solid md:block">
-      <div class="container mx-auto w-11/12">
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <a class="text-xl" href="#"> <span class="text-green-500">স্কুল</span> মক্তব </a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>আমাদের সম্পর্কে</a></li>
-              <li>
-                <details>
-                  <summary>কোর্স সমূহ</summary>
-                  <ul class="p-2">
-                    <li><a>তাজবীদ</a></li>
-                    <li><a>ফিকহ</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a href="#">স্টুডেন্ট কর্নার</a></li>
-              <li><a href="#">স্টুডেন্ট কর্নার</a></li>
-              <li><a href="#">স্টুডেন্ট কর্নার</a></li>
-              <li><a href="#">স্টুডেন্ট কর্নার</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-            
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a>আমাদের সম্পর্কে</a></li>
+                  <li>
+                    <details>
+                      <summary>কোর্স সমূহ</summary>
+                      <ul class="p-2">
+                        <li><a>তাজবীদ</a></li>
+                        <li><a>ফিকহ</a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li><a href="#">স্টুডেন্ট কর্নার</a></li>
+                  <li><a href="#">স্টুডেন্ট কর্নার</a></li>
+                  <li><a href="#">স্টুডেন্ট কর্নার</a></li>
+                  <li><a href="#">স্টুডেন্ট কর্নার</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end">
+                
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-
-    <section class="hero-area bg-gradient-to-r from-green-100 via-blue-50 to-pink-100 dark:bg-green-300">
         <div class="mx-auto container md:w-11/12">
-          
           <div class="hero-content flex flex-col justify-between py-10 md:flex-row">
             <div class="hero-image text-center">
               <img src="images/child.jpg" alt="" class="rounded-full mx-auto w-3/6 md:w-96 border-4 md:border-8 border-solid border-green-500 p-1">
             </div>
             <div class="hero-text text-center">
-              <h1 class="font-bold text-green-600 dark:text-white text-3xl md:text-7xl md:mb-3"> ইসলামিক অনলাইন মাদ্রাসা </h1>
+              <h1 class="font-bold text-green-600 text-3xl md:text-7xl md:mb-3"> ইসলামিক অনলাইন মাদ্রাসা </h1>
               <h2 class="font-bold text-xl md:text-3xl text-gray-600 mb-2 md:mb-5"> কর্তৃক পরিচালিত </h2>
               <p class="bg-gradient-to-r from-green-500  to-green-800 md:py-3 md:text-2xl px-10 py-2 text-lg rounded-md font-bold inline-block text-white"> স্কুল মক্তব </p>
               <ul class="flex text-gray-600 border-2 rounded-xl border-green-400 border-solid justify-center gap-5 p-1 md:p-3 mt-7 font-bold text-lg">
-                <li>  09638-113322</li>
+                <li>  <a href="tel:09638113322"> 09638-113322 </a> </li>
                 <li>info@schoolmaktab.com</li>
               </ul>
               
             </div>
           </div>
         </div>
-    </section>
+        <div class="nav hidden text-center md:block">
+          <ul class="flex border-t border-solid border-gray-300 justify-center hero-menu">
+            <li> <a href="#home"> হোম </a> </li>
+            <li> <a href="#about"> আমাদের সম্পর্কে </a> </li>
+            <li> <a href="#courses"> কোর্সসমূহ </a> </li>
+            <li> <a href="#why"> কেন স্কুল মক্তব? </a> </li>
+            <li> <a href="#teachers"> ক্লাস নিবেন যারা </a> </li>
+            <li> <a href="#teachers"> পরিসংখ্যান </a> </li>
+          </ul>
+        </div>
+    </header>
 
     <section class="feature-section py-10">
         <div class="container mx-auto w-11/12">

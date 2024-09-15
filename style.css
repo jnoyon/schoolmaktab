@@ -19,3 +19,7 @@ body {
   height: 4px; /* Thickness of the border */
   background: linear-gradient(to right, #38a169 50%,  #2e2e2e  50%); /* Black and Green colors */
 }
+.hero-menu li a {
+  display: block;
+  padding: 15px;
+}
