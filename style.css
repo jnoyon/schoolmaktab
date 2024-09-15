@@ -23,3 +23,10 @@ body {
   display: block;
   padding: 15px;
 }
+.ggb {
+  background-color: #31f27d;
+background-image: linear-gradient(132deg, #31f27d 0%, #07352b 100%);
+
+color: #FFF;
+  
+}
