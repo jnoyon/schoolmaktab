@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,20 @@
         }
         body {
             font-family: AdorNoirrit;
+        }
+        .heading {
+          position: relative;
+        }
+        .heading::after {
+          content: "";
+          position: absolute;
+          bottom: -4px; /* Adjust based on your design */
+          left: 50%;
+          bottom: -10px;
+          transform: translateX(-50%);
+          width: 100px; /* Full width of the heading */
+          height: 4px; /* Thickness of the border */
+          background: linear-gradient(to right, #38a169 50%,  #2e2e2e  50%); /* Black and Green colors */
         }
     </style>
 </head>
@@ -137,7 +151,7 @@
               <img src="images/bannerhero.jpg" alt="" class="rounded-full mx-auto w-3/6 md:w-96 border-4 md:border-8 border-solid border-green-500 p-3">
             </div>
             <div class="hero-text text-center">
-              <h1 class="font-bold text-green-600 text-3xl md:text-7xl md:mb-3"> ইসলামিক অনলাইন মাদ্রাসা </h1>
+              <h1 class="font-bold text-green-600 text-3xl md:text-7xl dark:text-white md:mb-3"> ইসলামিক অনলাইন মাদ্রাসা </h1>
               <h2 class="font-bold text-xl md:text-3xl text-gray-600 mb-2 md:mb-5"> কর্তৃক পরিচালিত </h2>
               <p class="bg-gradient-to-r from-green-500  to-green-800 md:py-3 md:text-2xl px-10 py-2 text-lg rounded-md font-bold inline-block text-white"> স্কুল মক্তব </p>
               <ul class="flex border-2 rounded-xl border-green-400 border-solid justify-center gap-5 p-1 md:p-3 mt-7 font-bold text-lg">
@@ -152,7 +166,10 @@
 
     <section class="feature-section py-10">
         <div class="container mx-auto w-11/12">
-          <h2 class="heading text-3xl md:text-5xl text-center mb-7 font-bold"> <span class="text-green-600">আমাদের</span> সম্পর্কে </h2>
+          <h2 class="heading text-3xl md:text-5xl text-center mb-7 font-bold"> 
+            <span class="text-green-600">আমাদের</span> সম্পর্কে
+          </h2>
+          
             <div class="features-area grid gap-3 grid-cols-2 md:grid-cols-3 md:gap-5">
                 <div class="card rounded-md shadow-md">
                     <div class="card-body p-3 text-center md:p-5">
@@ -202,7 +219,9 @@
 
     <section>
       <div class="container mx-auto w-11/12 pb-9">
-        <h2 class="heading text-3xl md:text-5xl text-center mb-7 font-bold"> <span class="text-green-600">আমাদের</span> সম্পর্কে </h2>
+        <h2 class="heading text-3xl md:text-5xl text-center mb-7 font-bold"> 
+          <span class="text-green-600">কোর্স</span> সমূহ
+        </h2>
         <div class="courses grid gap-5 md:grid-cols-3">
           <div class="card bg-base-100 shadow-xl rounded-md">
             <img src="images/banner.jpg" alt="course">
@@ -278,13 +297,13 @@
       <div class="container mx-auto w-11/12">
         <div class="flex flex-col md:flex-row gap-10">
           <div class="md:w-6/12">
-            <h2 class="heading text-3xl md:text-5xl text-center mb-7 font-bold"> <span class="text-green-600">আমাদের</span> সম্পর্কে </h2>
-            <p class="md:text-xl mb-3 text-justify"> উম্মাহের ভবিষ্যৎ রাহবারকে শিশুকাল থেকে দ্বীনি ইলমের সাথে পরিচয় করিয়ে দিতে, স্কুল মক্তব কোর্স। নিয়মিত সাব্জেক্টের পাশাপাশি এতে রয়েছে মোট ১২টি সাব্জেক্ট। তাই ১.৫ বছরের এই কোর্সটি শিশুকে ইসলামীপ্রেমী হিসেবে বেড়ে উঠতে সহায়তা করবে ইনশাআল্লাহ।  উম্মাহের ভবিষ্যৎ রাহবারকে শিশুকাল থেকে দ্বীনি ইলমের সাথে পরিচয় করিয়ে দিতে, স্কুল মক্তব কোর্স। নিয়মিত সাব্জেক্টের পাশাপাশি এতে রয়েছে মোট ১২টি সাব্জেক্ট। তাই ১.৫ বছরের এই কোর্সটি শিশুকে ইসলামীপ্রেমী হিসেবে বেড়ে উঠতে সহায়তা করবে ইনশাআল্লাহ। উম্মাহের ভবিষ্যৎ রাহবারকে শিশুকাল থেকে দ্বীনি ইলমের সাথে পরিচয় করিয়ে দিতে, স্কুল মক্তব কোর্স। নিয়মিত সাব্জেক্টের পাশাপাশি এতে রয়েছে মোট ১২টি সাব্জেক্ট। তাই ১.৫ বছরের এই কোর্সটি শিশুকে ইসলামীপ্রেমী হিসেবে বেড়ে উঠতে সহায়তা করবে ইনশাআল্লাহ।</p>
+            <h2 class="font-bold text-2xl mb-3"> <span class="text-green-600">কেন </span> স্কুল মক্তব? </h2>
+            <p class="md:text-lg mb-3 text-justify"> উম্মাহের ভবিষ্যৎ রাহবারকে শিশুকাল থেকে দ্বীনি ইলমের সাথে পরিচয় করিয়ে দিতে, স্কুল মক্তব কোর্স। নিয়মিত সাব্জেক্টের পাশাপাশি এতে রয়েছে মোট ১২টি সাব্জেক্ট। তাই ১.৫ বছরের এই কোর্সটি শিশুকে ইসলামীপ্রেমী হিসেবে বেড়ে উঠতে সহায়তা করবে ইনশাআল্লাহ।  উম্মাহের ভবিষ্যৎ রাহবারকে শিশুকাল থেকে দ্বীনি ইলমের সাথে পরিচয় করিয়ে দিতে, স্কুল মক্তব কোর্স। নিয়মিত সাব্জেক্টের পাশাপাশি এতে রয়েছে মোট ১২টি সাব্জেক্ট। তাই ১.৫ বছরের এই কোর্সটি শিশুকে ইসলামীপ্রেমী হিসেবে বেড়ে উঠতে সহায়তা করবে ইনশাআল্লাহ। উম্মাহের ভবিষ্যৎ রাহবারকে শিশুকাল থেকে দ্বীনি ইলমের সাথে পরিচয় করিয়ে দিতে, স্কুল মক্তব কোর্স। নিয়মিত সাব্জেক্টের পাশাপাশি এতে রয়েছে মোট ১২টি সাব্জেক্ট। তাই ১.৫ বছরের এই কোর্সটি শিশুকে ইসলামীপ্রেমী হিসেবে বেড়ে উঠতে সহায়তা করবে ইনশাআল্লাহ।</p>
             <a href="#" class="btn btn-primary mr-2"> মক্তব প্রাইমারি </a> 
             <a href="#" class="btn btn-accent"> মক্তব প্রাইমারি </a>
           </div>
           <div class="md:w-6/12">
-            <h2 class="divider divider-success mb-3"> <span class="font-bold text-green-600 text-xl md:text-2xl"> ভর্তি প্রক্রিয়া </span> </h2>
+            <h2 class="font-bold text-2xl mb-3"> <span class="text-green-600"> ভর্তি </span> প্রক্রিয়া  </h2>
             <ul class="timeline timeline-vertical">
               <li>
                 <div class="timeline-start timeline-box text-justify">ভর্তি হতে আপনাকে একটি কোর্স বাছাই করতে হবে - যে কোর্সে আপনি ভর্তি হতে চান।</div>
@@ -365,7 +384,7 @@
 
     <section class="py-7">
       <div class="container mx-auto w-11/12">
-        <h2 class="heading text-3xl md:text-5xl text-center mb-7 font-bold"> <span class="text-green-600">আমাদের</span> সম্পর্কে </h2>
+        <h2 class="heading text-3xl md:text-5xl text-center mb-7 font-bold"> <span class="text-green-600">ক্লাস</span> নিবেন যারা </h2>
           <div class="staffs grid gap-3 grid-cols-2 md:grid-cols-4 md:gap-5">
             <div class="card bg-base-100 rounded-md shadow-xl">
                 <img src="https://iom.edu.bd/wp-content/uploads/2023/05/ali-hasan-shaheb.jpg" alt="Images" />
@@ -404,7 +423,7 @@
 
     <section class="py-5">
       <div class="container mx-auto w-11/12">
-        <h2 class="heading text-3xl md:text-5xl text-center mb-7 font-bold"> <span class="text-green-600">আমাদের</span> সম্পর্কে </h2>
+        <h2 class="heading text-3xl md:text-5xl text-center mb-7 font-bold"> <span class="text-green-600">আমাদের</span> পরিসংখ্যান </h2>
         <div class="stats shadow-sm grid">
           <div class="stat place-items-center">
             <div class="stat-value">১০টি</div>
