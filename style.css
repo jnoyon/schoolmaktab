@@ -1,0 +1,21 @@
+@font-face {
+    font-family: AdorNoirrit;
+    src: url(fonts/AdorNoirrit.ttf);
+}
+body {
+    font-family: AdorNoirrit;
+}
+.heading {
+  position: relative;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Adjust based on your design */
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 100px; /* Full width of the heading */
+  height: 4px; /* Thickness of the border */
+  background: linear-gradient(to right, #38a169 50%,  #2e2e2e  50%); /* Black and Green colors */
+}

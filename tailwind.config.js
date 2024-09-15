@@ -1,5 +1,5 @@
 module.exports = {
-  darkMode: 'class', // Use class strategy for dark mode
+  // darkMode: 'class', // Use class strategy for dark mode
   theme: {
     extend: {
       colors: {
@@ -10,5 +10,7 @@ module.exports = {
   },
   plugins: [
     require('daisyui'),
+    
   ],
+  daisyui: { themes: ['light', 'dark'], },
 }

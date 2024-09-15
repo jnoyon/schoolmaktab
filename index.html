@@ -1,36 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Maktab</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @font-face {
-            font-family: AdorNoirrit;
-            src: url(fonts/AdorNoirrit.ttf);
-        }
-        body {
-            font-family: AdorNoirrit;
-        }
-        .heading {
-          position: relative;
-        }
-        .heading::after {
-          content: "";
-          position: absolute;
-          bottom: -4px; /* Adjust based on your design */
-          left: 50%;
-          bottom: -10px;
-          transform: translateX(-50%);
-          width: 100px; /* Full width of the heading */
-          height: 4px; /* Thickness of the border */
-          background: linear-gradient(to right, #38a169 50%,  #2e2e2e  50%); /* Black and Green colors */
-        }
-    </style>
 </head>
-<body>
+<body class="dark">
     
     <header class="header-area border-gray-200 border-b border-solid md:hidden">
         <div class="container mx-auto">
@@ -66,7 +44,7 @@
                 <div class="navbar-end">
                   <label class="swap swap-rotate">
                     <!-- this hidden checkbox controls the state -->
-                    <input type="checkbox" class="theme-controller" value="synthwave" />
+                    <input type="checkbox" class="theme-controller"  value="synthwave" />
                   
                     <!-- sun icon -->
                     <svg
@@ -143,15 +121,15 @@
       </div>
     </header>
 
-    <section class="hero-area bg-gradient-to-r from-green-100 via-blue-50 to-pink-100">
+    <section class="hero-area bg-gradient-to-r from-green-100 via-blue-50 to-pink-100 dark:bg-green-300">
         <div class="mx-auto container md:w-11/12">
           
           <div class="hero-content flex flex-col justify-between py-10 md:flex-row">
             <div class="hero-image text-center">
-              <img src="images/bannerhero.jpg" alt="" class="rounded-full mx-auto w-3/6 md:w-96 border-4 md:border-8 border-solid border-green-500 p-3">
+              <img src="images/child.jpg" alt="" class="rounded-full mx-auto w-3/6 md:w-96 border-4 md:border-8 border-solid border-green-500 p-1">
             </div>
             <div class="hero-text text-center">
-              <h1 class="font-bold text-green-600 text-3xl md:text-7xl dark:text-white md:mb-3"> ইসলামিক অনলাইন মাদ্রাসা </h1>
+              <h1 class="font-bold text-green-600 text-3xl md:text-7xl md:mb-3"> ইসলামিক অনলাইন মাদ্রাসা </h1>
               <h2 class="font-bold text-xl md:text-3xl text-gray-600 mb-2 md:mb-5"> কর্তৃক পরিচালিত </h2>
               <p class="bg-gradient-to-r from-green-500  to-green-800 md:py-3 md:text-2xl px-10 py-2 text-lg rounded-md font-bold inline-block text-white"> স্কুল মক্তব </p>
               <ul class="flex border-2 rounded-xl border-green-400 border-solid justify-center gap-5 p-1 md:p-3 mt-7 font-bold text-lg">
