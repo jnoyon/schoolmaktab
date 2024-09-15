@@ -5,38 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Maktab</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     
     <header class="hero-area flex flex-col justify-between md:min-h-screen bg-gradient-to-r from-green-100 via-blue-50 to-pink-100">
         <div class="header-section border-b border-gray-300 border-solid">
+          
           <div class="container mx-auto w-11/12">
-            <div class="navbar">
-              <div class="navbar-start">
-                <a class="text-xl" href="#"> <span class="text-green-500">স্কুল</span> মক্তব </a>
+            <div class="header-area flex justify-between items-center gap-10">
+              <div class="logo">
+                 <a href="#" class="font-bold text-3xl block py-7"> <span class="text-green-600">স্কুল</span> মক্তব </a> 
               </div>
-              <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                  <li><a>আমাদের সম্পর্কে</a></li>
-                  <li>
-                    <details>
-                      <summary>কোর্স সমূহ</summary>
-                      <ul class="p-2">
-                        <li><a>তাজবীদ</a></li>
-                        <li><a>ফিকহ</a></li>
-                      </ul>
-                    </details>
-                  </li>
-                  <li><a href="#">স্টুডেন্ট কর্নার</a></li>
-                  <li><a href="#">স্টুডেন্ট কর্নার</a></li>
-                  <li><a href="#">স্টুডেন্ট কর্নার</a></li>
-                  <li><a href="#">স্টুডেন্ট কর্নার</a></li>
+              <div class="menu hidden md:block">
+                <ul class="flex justify-center items-center gap-5 text-lg">
+                  <li> <a href="#home"> হোম </a> </li>
+                  <li> <a href="#about"> আমাদের সম্পর্কে </a> </li>
+                  <li> <a href="#courses"> কোর্সসমূহ </a> </li>
                 </ul>
               </div>
-              <div class="navbar-end">
-                
+              <div class="info">
+                  <ul class="flex gap-3">
+                    <li class="hidden md:block tooltip tooltip-bottom" data-tip="পূর্ব শেওড়াপাড়া, মিরপুর, ঢাকা-১২১৬"> <i class="fa-solid fa-location-dot bg-green-600 text-white px-4 text-lg py-2 rounded-md"></i> </li>
+                    <li class="hidden md:block"> <i class="fa-solid fa-user bg-green-600 text-white px-4 text-lg py-2 rounded-md"></i> </li>
+                    <li> <i class="fa-solid fa-bars bg-green-600 text-white px-4 py-2 rounded-md text-lg"></i> </li>
+                  </ul>
               </div>
             </div>
           </div>
@@ -50,9 +46,9 @@
               <h1 class="font-bold text-green-600 text-3xl md:text-7xl md:mb-3"> ইসলামিক অনলাইন মাদ্রাসা </h1>
               <h2 class="font-bold text-xl md:text-3xl text-gray-600 mb-2 md:mb-5"> কর্তৃক পরিচালিত </h2>
               <p class="bg-gradient-to-r from-green-500  to-green-800 md:py-3 md:text-2xl px-10 py-2 text-lg rounded-md font-bold inline-block text-white"> স্কুল মক্তব </p>
-              <ul class="flex text-gray-600 border-2 rounded-xl border-green-400 border-solid justify-center gap-5 p-1 md:p-3 mt-7 font-bold text-lg">
-                <li>  <a href="tel:09638113322"> 09638-113322 </a> </li>
-                <li>info@schoolmaktab.com</li>
+              <ul class="flex text-gray-600 border-2 rounded-xl border-green-400 border-solid justify-center gap-5 p-1 md:p-3 mt-10 font-bold text-lg">
+                <li>  <a href="tel:09638113322"> <i class="fa-solid fa-phone bg-green-600 text-white px-2 py-2 rounded-full mr-1"></i> 09638-113322 </a> </li>
+                <li> <i class="fa-solid fa-envelope bg-green-600 text-white px-2 py-2 rounded-full mr-1"></i> info@schoolmaktab.com</li>
               </ul>
               
             </div>
@@ -60,15 +56,16 @@
         </div>
         <div class="nav hidden text-center md:block">
           <ul class="flex border-t border-solid border-gray-300 justify-center hero-menu">
-            <li> <a href="#home"> হোম </a> </li>
-            <li> <a href="#about"> আমাদের সম্পর্কে </a> </li>
-            <li> <a href="#courses"> কোর্সসমূহ </a> </li>
-            <li> <a href="#why"> কেন স্কুল মক্তব? </a> </li>
-            <li> <a href="#teachers"> ক্লাস নিবেন যারা </a> </li>
-            <li> <a href="#teachers"> পরিসংখ্যান </a> </li>
+            <li> <a href="#home"> <i class="fa-solid fa-home text-gray-500 mr-1"></i> হোম </a> </li>
+            <li> <a href="#about"> <i class="fa-solid fa-users text-gray-500 mr-1"></i> আমাদের সম্পর্কে </a> </li>
+            <li> <a href="#courses"> <i class="fa-solid fa-gear text-gray-500 mr-1"></i> কোর্সসমূহ </a> </li>
+            <li> <a href="#why"> <i class="fa-solid fa-landmark text-gray-500 mr-1"></i> কেন স্কুল মক্তব? </a> </li>
+            <li> <a href="#teachers"> <i class="fa-solid fa-user text-gray-500 mr-1"></i> ক্লাস নিবেন যারা </a> </li>
+            <li> <a href="#teachers"> <i class="fa-solid fa-signal text-gray-500 mr-1"></i> পরিসংখ্যান </a> </li>
           </ul>
         </div>
     </header>
+
 
     <section class="feature-section py-10">
         <div class="container mx-auto w-11/12">
