@@ -2,8 +2,26 @@
     font-family: AdorNoirrit;
     src: url(fonts/AdorNoirrit.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: AdorNoirrit;
+}
+p {
+  text-align: justify;
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Make sure it's on top of other content */
+  background-color: white; /* Adjust as needed */
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+
 }
 .heading {
   position: relative;
@@ -64,4 +82,9 @@ body {
 .overlay.active {
   opacity: 1;
   display: block;
+}
+@media all and (max-width: 768px){
+  .sticky-nav {
+    position: inherit;;
+  }
 }

@@ -14,7 +14,7 @@
 <body>
 
 
-    <header class="hero-area flex flex-col justify-between md:min-h-screen bg-gradient-to-r from-green-100 via-blue-50 to-pink-100">
+    <header class="hero-area flex flex-col justify-between md:min-h-screen bg-gradient-to-r from-green-100 via-blue-50 to-pink-100" id="home">
         <div class="header-section border-b border-gray-300 border-solid">
           
           <div class="container mx-auto w-11/12">
@@ -56,7 +56,7 @@
             </div>
           </div>
         </div>
-        <div class="nav hidden text-center md:block">
+        <div class="nav hidden text-center bg-gradient-to-r from-green-100 via-blue-50 to-pink-100 md:block" id="stickyNav">
           <ul class="flex border-t border-solid border-gray-300 justify-center hero-menu">
             <li> <a href="#home"> <i class="fa-solid fa-home text-gray-500 mr-1"></i> হোম </a> </li>
             <li> <a href="#about"> <i class="fa-solid fa-users text-gray-500 mr-1"></i> আমাদের সম্পর্কে </a> </li>
@@ -220,7 +220,7 @@
       </div>
     </section>
 
-    <section class="about-section bg-gradient-to-r from-green-100 via-blue-50 to-pink-100 py-10">
+    <section class="about-section bg-gradient-to-r from-green-100 via-blue-50 to-pink-100 py-10" id="why">
       <div class="container mx-auto w-11/12">
         <div class="flex flex-col md:flex-row gap-10">
           <div class="md:w-6/12">
@@ -275,7 +275,7 @@
       </div>
     </section>
 
-    <section class="py-7">
+    <section class="py-7" id="teachers">
       <div class="container mx-auto w-11/12">
         <h2 class="heading text-3xl md:text-5xl text-center mb-7 font-bold"> <span class="text-green-600">ক্লাস</span> নিবেন যারা </h2>
           <div class="staffs grid gap-3 grid-cols-2 md:grid-cols-4 md:gap-5">
@@ -339,13 +339,10 @@
     <footer class="bg-gradient-to-r from-green-100 via-blue-50 to-pink-100">
       <div class="container mx-auto w-11/12">
         <footer class="footer grid grid-cols-2 md:grid-cols-4 gap-5 text-base-content pt-10">
-          <nav>
+          <div>
             <h6 class="footer-title">আমাদের সম্পর্কে</h6>
-            <a class="link link-hover">Branding</a>
-            <a class="link link-hover">Design</a>
-            <a class="link link-hover">Marketing</a>
-            <a class="link link-hover">Advertisement</a>
-          </nav>
+            <p> উম্মাহের ভবিষ্যৎ রাহবারকে শিশুকাল থেকে দ্বীনি ইলমের সাথে পরিচয় করিয়ে দিতে, স্কুল মক্তব কোর্স। নিয়মিত সাব্জেক্টের পাশাপাশি এতে রয়েছে মোট ১২টি সাব্জেক্ট। তাই ১.৫ বছরের এই কোর্সটি শিশুকে ইসলামীপ্রেমী হিসেবে বেড়ে উঠতে সহায়তা করবে ইনশাআল্লাহ। </p>
+          </div>
           <nav>
             <h6 class="footer-title">স্টুডেন্ট কর্নার</h6>
             <a class="link link-hover">About us</a>
